@@ -1,0 +1,71 @@
+// See https://aka.ms/new-console-template for more information
+using System.Collections;
+/*
+int[] arr=new int[5];
+
+int cargararreglo(int[] arr, int dim)
+{
+    int val = 0,num;
+    for(int i=0; i<dim; i++)
+    {
+        Console.WriteLine("Ingrese un nro");
+        num = Int32.Parse(Console.ReadLine());
+        arr[i] = num;
+        val++;
+    }
+    return val;
+}
+
+static void Ordenamiento_Insercion(int[] array,int dim)
+{
+    for (int i = 0; i < dim; i++)
+    {
+        int temp = array[i];
+        int j = i - 1;
+        while ((j >= 0) && (array[j] > temp))
+        {
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = temp;
+    }
+}
+
+void mostrararreglo(int[] arr,int dim)
+{
+    for (int i = 0; i < dim; i++)
+    {
+        Console.Write(arr[i]);
+    }
+}
+
+int v1 = cargararreglo(arr, 5);
+Ordenamiento_Insercion(arr,5);
+mostrararreglo(arr, v1);
+*/
+
+/// <summary>
+/// Crear una clase que contenga una funcion que permita ingresar al usuario la 
+/// cantidad de caracteres o palabras que desee el usuario por teclado, usando colas.
+/// </summary>
+public class caracteres
+{   
+    public static void Main()
+    {
+        int num;
+        string palabra;
+        Queue miCola = new Queue();
+        Console.WriteLine("Cuantos caracteres o palabras quiere ingresar a la cola?");
+        num = Int32.Parse(Console.ReadLine());
+        Console.WriteLine("Ingrese el-los caracteres deseados");
+        for (byte j=0; j<num; j++) { 
+        miCola.Enqueue("Caracter "+j+" "+Console.ReadLine());
+        }
+        for (byte i = 0; i < num; i++)
+        {
+            palabra = (string)miCola.Dequeue();
+            Console.WriteLine("["+palabra+"]");
+        }
+        Console.ReadKey();
+    }
+}

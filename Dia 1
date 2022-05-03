@@ -1,0 +1,219 @@
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Elija uno de los 16 ejercicios!");
+int num = int.Parse(Console.ReadLine());
+
+switch (num)
+{
+    case 1:
+        int numeroIntroducido = 0;
+        Console.WriteLine("Ejercicio 1");
+        do
+        {
+            Console.WriteLine("Introduzca un número entero positivo: ");
+            numeroIntroducido = int.Parse(Console.ReadLine());
+
+            if (numeroIntroducido < 0)
+            {
+                Console.WriteLine("El número introducido no es correcto,");
+                Console.WriteLine(" debe introducir un número positivo.");
+            }
+        } while (numeroIntroducido < 0);
+
+        int suma = 0;
+
+        for (int i = numeroIntroducido; i < numeroIntroducido + 100; i++)
+        {
+            suma += i;
+        }
+
+        Console.WriteLine("La suma de los 100 números siguientes a ");
+        Console.WriteLine(numeroIntroducido + " es " + suma + ".");
+        break;
+    case 2:
+        Console.WriteLine("Ejercicio 2");
+        int primerNumero, segundoNumero;
+        do
+        {
+            Console.WriteLine("Introduzca un número entero: ");
+            primerNumero = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduzca otro número entero distinto al anterior: ");
+            segundoNumero = int.Parse(Console.ReadLine());
+
+            if (primerNumero == segundoNumero)
+            {
+                Console.WriteLine("Los números introducidos no son válidos, ");
+                Console.WriteLine(" deben ser distintos.");
+            }
+        } while (primerNumero == segundoNumero);
+        // si el primer número es mayor que el segundo, se intercambian los valores
+        if (primerNumero > segundoNumero)
+        {
+            int aux = primerNumero;
+            primerNumero = segundoNumero;
+            segundoNumero = aux;
+        }
+        for (int i = primerNumero; i <= segundoNumero; i += 7)
+        {
+            Console.WriteLine(i + " ");
+        }
+        Console.WriteLine();
+        break;
+    case 3:
+        Console.WriteLine("Ejercicio 3");
+        Console.WriteLine("Por favor, vaya introduciendo números.");
+        Console.WriteLine("El programa terminará cuando la suma de los números sea mayor que 150.");
+        int numeroIntroducido2;
+        int suma2 = 0;
+        int numeroDeElementos = 0;
+        do
+        {
+            numeroIntroducido2 = int.Parse(Console.ReadLine());
+            suma2 += numeroIntroducido2;
+            numeroDeElementos++;
+        } while (suma2 <= 150);
+        Console.WriteLine("Ha introducido un total de " + numeroDeElementos + " números.");
+        Console.WriteLine("La suma total es " + suma2 + ".");
+        Console.WriteLine("La media es " + suma2 / (double)numeroDeElementos);
+        break;
+    case 4:
+        Console.WriteLine("Ejercicio 4");
+        int h, v, salario = 0;
+        int jornada = 48;
+        string nombre;
+        Console.WriteLine("Ingresar el nombre del trabajador");
+        nombre = Console.ReadLine();
+        Console.WriteLine("Ingresar la cantidad de horas trabajadas");
+        h = int.Parse(Console.ReadLine());
+        Console.WriteLine("Ingresar el valor por hora trabajada");
+        v = int.Parse(Console.ReadLine());
+        salario = h * v;
+        Console.WriteLine("El salario del trabajador;");
+        Console.WriteLine(nombre + " es " + salario + "\n");
+        Console.WriteLine("La jornada es de : " + jornada + " horas");
+        int he = h - jornada;
+        if (h > jornada)
+        {
+            Console.WriteLine("Tiene " + he + " horas extras");
+        }
+        else
+        {
+            Console.WriteLine("No tiene horas extras");
+        }
+        Console.ReadKey();
+        break;
+    case 5:
+        Console.WriteLine("Ejercicio 5");
+        int error;
+        int señales;
+        int tipovehiculo;
+      /*  while(señales!=1000 || error != 2) { 
+        if (tipovehiculo == 0)
+        {
+            Console.WriteLine("Bicicleta");
+        }
+        else if(tipovehiculo == 1)
+        {
+            Console.WriteLine("Moto");
+        }
+        else if(tipovehiculo == 2)
+        {
+            Console.WriteLine("Coche");
+        }
+        else if (tipovehiculo == 3)
+        {
+            Console.WriteLine("Camion");
+        }
+        else if (tipovehiculo >= 4 || tipovehiculo<0)
+        {
+            Console.WriteLine("Error");
+        }
+        }
+      */
+        break;
+    case 6:
+        Console.WriteLine("Ejercicio 6");
+        double costo=1.5;
+        double total = costo * 2+(costo/5)*2;
+        Console.WriteLine("El costo total es de " + total + ".");
+        Console.ReadKey();
+        break;
+    case 7:
+        Console.WriteLine("Ejercicio 7");
+        Console.Write("Escriba la cantidad de segundos que quiere convertir: ");
+        int segundos = int.Parse(Console.ReadLine());
+        int minutosH = segundos / 60;
+        int Rsegundo = segundos % 60;
+        int Rhora = minutosH / 60;
+        int Rminutos = minutosH % 60;
+        Console.WriteLine("\n{0} segundos equivale a:\n{1} horas, {2} minutos y {3} segundos", segundos, Rhora, Rminutos, Rsegundo);
+        Console.ReadKey();
+        break;
+    case 8:
+        Console.WriteLine("Ejercicio 8");
+        Console.Write("Ingrese el salario: ");
+        double salario2=double.Parse(Console.ReadLine());
+        double salarionuevo =(salario2 * 0.08)-(salario2/0.025);
+        Console.ReadKey();
+        break;
+    case 9:
+        Console.WriteLine("Ejercicio 9");
+        double area = 0, b1 = 0, b2 = 0, h2= 0;
+        Console.WriteLine("Encontrar el Area de un Trapecio.");
+        Console.Write("Ingrese la base mayor del trapecio: ");
+        b1 = Int32.Parse(Console.ReadLine());
+        Console.Write("Ingrese la base menor del trapecio: ");
+        b2 = Int32.Parse(Console.ReadLine());
+        Console.Write("Ingrese la altura del trapecio: ");
+        h = Int32.Parse(Console.ReadLine());
+        area = (b1 + b2) * h2 / 2;
+        Console.WriteLine("El Area del trapecio es: " + area);
+        Console.ReadKey();
+        break;
+    case 10:
+        Console.WriteLine("Ejercicio 10");
+        break;
+    case 11:
+        Console.WriteLine("Ingrese un 5");
+        int a = int.Parse(Console.ReadLine());
+        for (int y = 1; y <= a; y++)
+        {
+            for (int x = 1; x <= a - y; x++)
+            {
+                Console.Write("*");
+            }
+            for (int x = 1; x <= y; x++)
+            {
+                Console.Write(" ");
+            }
+            for (int x = 1; x <= y - 1; x++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+        }
+        break;
+    case 12:
+        Console.WriteLine("Ejercicio 12");
+        break;
+    case 13:
+        Console.WriteLine("Ejercicio 13");
+        double salAnt, salNuevo;
+        string nomObrero;
+        Console.Write(" Ingrese el nombre del obrero : ");
+        nomObrero = Console.ReadLine();
+        Console.Write("\n Escriba su salario anterior : ");
+        salAnt = Double.Parse(Console.ReadLine());
+        salNuevo = salAnt + salAnt * 0.25;
+        Console.WriteLine("\n El nuevo salario a recibir es : {0:C2}", salNuevo);
+        Console.WriteLine("\n El salario de los proximos meses es {0:C2} ", salNuevo * 10);
+        break;
+    case 14:
+        Console.WriteLine("Ejercicio 14");
+        break;
+    case 15:
+        Console.WriteLine("Ejercicio 15");
+        break;
+    case 16:
+        Console.WriteLine("Ejercicio 16");
+        break;
+}

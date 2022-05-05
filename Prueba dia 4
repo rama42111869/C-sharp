@@ -1,0 +1,238 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace pair3
+{
+    internal class Program
+    {
+        public class Calculo
+        {
+            protected int valor1;
+            protected int valor2;
+            protected int resultado;
+            protected double resultado_div;
+
+            public int Valor1
+            {
+                set
+                {
+                    valor1 = value;
+                }
+                get
+                {
+                    return valor1;
+                }
+            }
+
+            public int Valor2
+            {
+                set
+                {
+                    valor2 = value;
+                }
+                get
+                {
+                    return valor2;
+                }
+            }
+
+            public int Resultado
+            {
+                protected set
+                {
+                    resultado = value;
+                }
+                get
+                {
+                    return resultado;
+                }
+            }
+            public double Resultado_div
+            {
+                protected set
+                {
+                    resultado_div = value;
+                }
+                get
+                {
+                    return resultado_div;
+                }
+            }
+        }
+        public class Suma : Calculo
+        {
+            public void Calcular()
+            {
+                Resultado = Valor1 + Valor2;
+            }
+        }
+        public class Resta : Calculo
+        {
+            public void Calcular()
+            {
+                Resultado = Valor1 - Valor2;
+            }
+        }
+        public class Division : Calculo
+        {
+            public void Calcular()
+            {
+               Resultado_div = (double)Valor1 / (double)Valor2;
+            }
+        }
+        public class Multiplicacion : Calculo
+        {
+            public void Calcular()
+            {
+                Resultado = Valor1 * Valor2;
+            }
+        }
+        public class Potencia : Calculo
+        {
+            public void Calcular()
+            {
+               Resultado_div = Math.Pow((double)Valor1,(double)Valor2);
+            }
+        }
+        public class Raizcuadrada : Calculo
+        {
+            public void Calcular()
+            {
+               Resultado_div = Math.Sqrt((double)Valor1);
+            }
+        }
+        class Prueba
+        {
+            static void Main(string[] args)
+            {
+                bool error = false;
+                do
+                {
+                    int selector;
+                    int numero1 = 0;
+                    int numero2 = 0;
+                    try
+                    {
+                        Console.WriteLine("\nCalcular con clase");
+                        Console.WriteLine("Sumar = 1");
+                        Console.WriteLine("Restar = 2");
+                        Console.WriteLine("Dividir = 3");
+                        Console.WriteLine("Multiplicar = 4");
+                        Console.WriteLine("Potenciacion = 5");
+                        Console.WriteLine("Raiz = 6");
+                        Console.WriteLine("Salir = 7");
+                        selector = Int32.Parse(Console.ReadLine());
+                        Console.Clear();
+                        switch (selector)
+                        {
+
+                            case 1: //Caso uno es suma
+
+                                Suma suma1 = new Suma();
+                                Console.WriteLine("Ingrese primer valor:");
+                                numero1 = Int32.Parse(Console.ReadLine());
+                                suma1.Valor1 = numero1;
+                                Console.WriteLine("Ingrese segundo valor:");
+                                numero2 = Int32.Parse(Console.ReadLine());
+                                suma1.Valor2 = numero2;
+                                suma1.Calcular();
+                                Console.WriteLine("La suma de " + suma1.Valor1 + " y " + suma1.Valor2 + " es " + suma1.Resultado);
+                                error = true;
+                                Console.ReadKey();
+                                Console.Clear();
+                                break;
+                            case 2: //resta
+                                Resta resta1 = new Resta();
+                                Console.WriteLine("Ingrese primer valor:");
+                                numero1 = Int32.Parse(Console.ReadLine());
+                                resta1.Valor1 = numero1;
+                                Console.WriteLine("Ingrese segundo valor:");
+                                numero2 = Int32.Parse(Console.ReadLine());
+                                resta1.Valor2 = numero2;
+                                resta1.Calcular();
+                                Console.WriteLine("La resta de " + resta1.Valor1 + " y " + resta1.Valor2 + " es " + resta1.Resultado);
+                                error = true;
+                                Console.ReadKey();
+                                Console.Clear();
+                                break;
+                            case 3: //division
+                                Division division1 = new Division();
+                                Console.WriteLine("Ingrese primer valor:");
+                                numero1 = Int32.Parse(Console.ReadLine());
+                                division1.Valor1 = numero1;
+                                Console.WriteLine("Ingrese segundo valor:");
+                                numero2 = Int32.Parse(Console.ReadLine());
+                                division1.Valor2 = numero2;
+                                division1.Calcular();
+                                Console.WriteLine("La division de " + division1.Valor1 + " y " + division1.Valor2 + " es " + division1.Resultado_div);
+                                error = true;
+                                Console.ReadKey();
+                                Console.Clear();
+                                break;
+                            case 4: //multiplicacion
+                                Multiplicacion multiplicacion1 = new Multiplicacion();
+                                Console.WriteLine("Ingrese primer valor:");
+                                numero1 = Int32.Parse(Console.ReadLine());
+                                multiplicacion1.Valor1 = numero1;
+                                Console.WriteLine("Ingrese segundo valor:");
+                                numero2 = Int32.Parse(Console.ReadLine());
+                                multiplicacion1.Valor2 = numero2;
+                                multiplicacion1.Calcular();
+                                Console.WriteLine("La multiplicacion de " + multiplicacion1.Valor1 + " y " + multiplicacion1.Valor2 + " es " + multiplicacion1.Resultado);
+                                error = true;
+                                Console.ReadKey();
+                                Console.Clear();
+                                break;
+                            case 5://Potenciacion
+                                Potencia potencias = new Potencia();
+                                Console.WriteLine("Ingrese primer valor:");
+                                numero1 = Int32.Parse(Console.ReadLine());
+                                potencias.Valor1 = numero1;
+                                Console.WriteLine("Ingrese segundo valor:");
+                                numero2 = Int32.Parse(Console.ReadLine());
+                                potencias.Valor2 = numero2;
+                                potencias.Calcular();
+                                Console.WriteLine("El 1ero nro " + potencias.Valor1 + " elevado al 2do nro " + potencias.Valor2 + " es " + potencias.Resultado_div);
+                                error = true;
+                                Console.ReadKey();
+                                Console.Clear();
+                                break;
+                            case 6://Raices
+                                Raizcuadrada raices = new Raizcuadrada();
+                                Console.WriteLine("Ingrese primer valor:");
+                                numero1 = Int32.Parse(Console.ReadLine());
+                                raices.Valor1 = numero1;
+                                Console.WriteLine("Ingrese segundo valor:");
+                                numero2 = Int32.Parse(Console.ReadLine());
+                                raices.Valor2 = numero2;
+                                raices.Calcular();
+                                Console.WriteLine("El 1ero nro " + raices.Valor1 + " tiene raiz de " + raices.Valor2 + " como resultado da " + raices.Resultado_div);
+                                error = true;
+                                Console.ReadKey();
+                                Console.Clear();
+                                break;
+                            case 7:
+                                Console.Clear();
+                                error = false;
+                                break;
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Tipo de dato no permitido");
+                        error = true;
+                        Console.ReadKey();
+                        Console.Clear();
+                    }
+                }
+                while (error == true);
+
+
+            }
+        }
+    }
+}

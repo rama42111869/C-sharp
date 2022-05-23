@@ -1,0 +1,17 @@
+C:\Users\Equipo\source\repos\CrudWindForm\bin\Debug\CrudWindForm.exe.config
+C:\Users\Equipo\source\repos\CrudWindForm\bin\Debug\CrudWindForm.exe
+C:\Users\Equipo\source\repos\CrudWindForm\bin\Debug\CrudWindForm.pdb
+C:\Users\Equipo\source\repos\CrudWindForm\bin\Debug\EntityFramework.dll
+C:\Users\Equipo\source\repos\CrudWindForm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Equipo\source\repos\CrudWindForm\bin\Debug\EntityFramework.xml
+C:\Users\Equipo\source\repos\CrudWindForm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.csproj.AssemblyReference.cache
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.Form1.resources
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.Properties.Resources.resources
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.csproj.GenerateResource.cache
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.csproj.CoreCompileInputs.cache
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.csproj.CopyComplete
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.exe
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.pdb
+C:\Users\Equipo\source\repos\CrudWindForm\obj\Debug\CrudWindForm.Presentacion.Fmrtabla.resources

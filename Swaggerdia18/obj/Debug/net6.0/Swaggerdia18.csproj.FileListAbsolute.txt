@@ -1,0 +1,7 @@
+C:\Users\Equipo\source\repos\Swaggerdia18\obj\Debug\net6.0\Swaggerdia18.csproj.AssemblyReference.cache
+C:\Users\Equipo\source\repos\Swaggerdia18\obj\Debug\net6.0\Swaggerdia18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Equipo\source\repos\Swaggerdia18\obj\Debug\net6.0\Swaggerdia18.AssemblyInfoInputs.cache
+C:\Users\Equipo\source\repos\Swaggerdia18\obj\Debug\net6.0\Swaggerdia18.AssemblyInfo.cs
+C:\Users\Equipo\source\repos\Swaggerdia18\obj\Debug\net6.0\Swaggerdia18.csproj.CoreCompileInputs.cache
+C:\Users\Equipo\source\repos\Swaggerdia18\obj\Debug\net6.0\Swaggerdia18.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Equipo\source\repos\Swaggerdia18\obj\Debug\net6.0\Swaggerdia18.MvcApplicationPartsAssemblyInfo.cache

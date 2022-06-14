@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "London Porter",
+    "Marca": "Fuller´s",
+    "Alcohol": 8.5
+  },
+  {
+    "Id": 2,
+    "Nombre": "Hazy IPA",
+    "Marca": "Sierra Nevada",
+    "Alcohol": 8.5
+  },
+  {
+    "Id": 3,
+    "Nombre": "Pale Ale",
+    "Marca": "Minerva",
+    "Alcohol": 8.5
+  }
+]
